@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Web Jahil 😂</title>
+  <style>
+    body {
+      background: #111;
+      color: white;
+      text-align: center;
+      font-family: Arial;
+      padding-top: 100px;
+    }
+
+    button {
+      padding: 15px 25px;
+      font-size: 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      background: red;
+      color: white;
+      position: absolute;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>🎁 Ada hadiah buat kamu!</h1>
+  <p>Klik tombol di bawah untuk mengambil hadiah 😏</p>
+
+  <button id="jahil">KLIK AKU</button>
+
+  <script>
+    const tombol = document.getElementById("jahil");
+
+    tombol.addEventListener("mouseover", function () {
+      const x = Math.random() * (window.innerWidth - 150);
+      const y = Math.random() * (window.innerHeight - 80);
+
+      tombol.style.left = x + "px";
+      tombol.style.top = y + "px";
+    });
+
+    tombol.addEventListener("click", function () {
+      alert("😂 KENA JAHIL! Hadiahnya cuma senyum 😆");
+    });
+  </script>
+
+</body>
+</html>
